@@ -1,0 +1,2 @@
+# Equipamentos
+crud equipamentos
