@@ -1,5 +1,16 @@
 /* ========== Estilos Globais ========== */
 
+button:-moz-focus-outer {
+    border: none;
+}
+
+input[type='text']:focus {
+    border: 1px solid blue;
+}
+
+-webkit-text-size-adjust: none; /* Desativa o ajuste */
+
+
 /* Define a fonte padrão para o corpo da página */
 body {
     font-family: Arial, sans-serif; /* Define uma fonte legível e limpa */
@@ -9,8 +20,23 @@ body {
     line-height: 1.6; /* Define espaçamento confortável entre linhas */
 }
 
-/* Centraliza o container principal */
+/* Estiliza a imagem central */
+img.center-image {
+    width: 15%; /* Reduz a imagem para 20% do tamanho original */
+    max-width: 15%; /* Garante que não ultrapasse 20% */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem se comporte como bloco */
+}
+
+/* Centraliza a imagem e o cabeçalho no centro da página */
 .container {
+    display: flex; /* Ativa o layout flexbox */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha o conteúdo ao topo */
+    min-height: 100vh; /* Ocupa a altura total da janela */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 2rem; /* Margem superior para afastar um pouco do topo */
     max-width: 800px; /* Limita a largura máxima do conteúdo */
     margin: auto; /* Centraliza horizontalmente */
     padding: 20px; /* Adiciona espaçamento interno */
@@ -28,7 +54,7 @@ body {
 
 /* Estiliza as linhas do cabeçalho da tabela */
 .table thead th {
-    background-color: #007bff; /* Cor de fundo azul do cabeçalho */
+    background-color: #000000; /* Cor de fundo preto do cabeçalho */
     color: white; /* Texto branco para contraste */
     padding: 10px; /* Espaçamento interno */
     text-align: left; /* Alinha o texto à esquerda */

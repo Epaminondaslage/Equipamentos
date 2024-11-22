@@ -1,5 +1,3 @@
-CREATE DATABASE IF NOT EXISTS equipamentos_db;
-USE equipamentos_db;
 
 CREATE TABLE dispositivos (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -7,6 +5,8 @@ CREATE TABLE dispositivos (
     nome_dispositivo VARCHAR(255) NOT NULL,
     local_instalacao ENUM('cozinha', 'salão', 'chale', 'container', 'garagem') NOT NULL,
     observacao TEXT,
-    ip VARCHAR(15) UNIQUE NOT NULL,
+    ip VARCHAR(45) NOT NULL,
     conexao_rede ENUM('DHCP', 'IP fixo') NOT NULL
 );
+
+

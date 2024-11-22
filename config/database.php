@@ -2,10 +2,10 @@
 // Define a classe Database para gerenciar a conexão ao banco de dados
 class Database {
     // Configurações do banco de dados
-    private $host = "localhost"; // Endereço do servidor do banco
-    private $db_name = "equipamentos_db"; // Nome do banco de dados
-    private $username = "root"; // Nome de usuário para conexão
-    private $password = ""; // Senha para conexão
+    private $host = "127.0.0.1"; // Endereço do servidor do banco
+    private $db_name = "sitio_pds"; // Nome do banco de dados
+    private $username = "epaminondas"; // Nome de usuário para conexão
+    private $password = "Ep@m1n0nd@s"; // Senha para conexão
     public $conn; // Variável que armazenará a conexão ativa
 
     /**

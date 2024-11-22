@@ -11,7 +11,7 @@ $db = $database->getConnection();
 
 // Define a query SQL para buscar os dispositivos
 // Usamos LIMIT 10 para limitar os resultados a 10 registros por página (paginação pode ser implementada)
-$query = "SELECT * FROM dispositivos LIMIT 10";
+$query = "SELECT * FROM dispositivos LIMIT 1000";
 
 // Prepara a consulta SQL
 $stmt = $db->prepare($query);
