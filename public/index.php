@@ -122,29 +122,13 @@
                     <div class="mb-3">
                         <label for="edit_tipo" class="form-label">Tipo de Equipamento</label>
                         <select id="edit_tipo" name="tipo_equipamento" class="form-control" required>
-                            <option value="">Selecione</option>
-                            <option value="camera">Câmera</option>
-                            <option value="roteador">Roteador</option>
-                            <option value="access point">Access Point</option>
-                            <option value="rele ip">Relé IP</option>
-                            <option value="interruptor ip">Interruptor IP</option>
-                            <option value="tomada ip">Tomada IP</option>
-                            <option value="camera IP">Câmera IP</option>
-                            <option value="DVR">DVR</option>
-                            <option value="NVR">NVR</option>
-                            <option value="computador">Computador</option>
-                            <option value="inversor de frequencia">Inversor de Frequência</option>
+                            <!-- as opcoes do edit veem do select de cadastro -->
                         </select>
                     </div>
                     <div class="mb-3">
                         <label for="edit_local" class="form-label">Local de Instalação</label>
                         <select id="edit_local" name="local_instalacao" class="form-control" required>
-                            <option value="">Selecione</option>
-                            <option value="cozinha">Cozinha</option>
-                            <option value="salão">Salão</option>
-                            <option value="chale">Chalé</option>
-                            <option value="container">Container</option>
-                            <option value="garagem">Garagem</option>
+                            <!-- as opcoes do edit veem do select de cadastro -->
                         </select>
                     </div>
                     <div class="mb-3">
@@ -154,9 +138,7 @@
                     <div class="mb-3">
                         <label for="edit_conexao" class="form-label">Conexão à Rede</label>
                         <select id="edit_conexao" name="conexao_rede" class="form-control" required>
-                            <option value="">Selecione</option>
-                            <option value="DHCP">DHCP</option>
-                            <option value="IP fixo">IP Fixo</option>
+                            <!-- as opcoes do edit veem do select de cadastro -->
                         </select>
                     </div>
             </div>
