@@ -76,10 +76,11 @@
                             <select id="local" name="local_instalacao" class="form-control" required>
                                 <option value="">Selecione</option>
                                 <option value="cozinha">Cozinha</option>
-                                <option value="salão">Salão</option>
+                                <option value="salao">Salão</option>
                                 <option value="chale">Chalé</option>
                                 <option value="container">Container</option>
                                 <option value="garagem">Garagem</option>
+                                <option value="casa caseiro">Casa caseiro</option>
                             </select>
                         </div>
                         <div class="mb-3">

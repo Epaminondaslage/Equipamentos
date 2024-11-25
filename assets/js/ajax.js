@@ -45,7 +45,7 @@ function getSelectOptions(selectId) {
  * @param {number} id - O ID do dispositivo a ser editado.
  */
 function openEditModal(id) {
-    fetch(`/Equipamentos/api/dispositivos/get_device.php?id=${id}`)
+    fetch(`/Equipamentos/api/dispositivos/get.php?id=${id}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Erro na requisição: ${response.statusText}`);
@@ -55,13 +55,13 @@ function openEditModal(id) {
         .then(data => {
             // Preencher campos básicos
             document.getElementById("edit_id").value = data.id || "";
-            document.getElementById("edit_nome").value = data.nome || "";
+            document.getElementById("edit_nome").value = data.nome_dispositivo || "";
             document.getElementById("edit_ip").value = data.ip || "";
 
             // Preencher os selects com valores ENUM e selecionar o valor atual
-            populateSelect("edit_tipo", getSelectOptions('tipo'), data.tipo);
-            populateSelect("edit_local", getSelectOptions('local'), data.local);
-            populateSelect("edit_conexao", getSelectOptions('conexao'), data.conexao);
+            populateSelect("edit_tipo", getSelectOptions('tipo'), data.tipo_equipamento);
+            populateSelect("edit_local", getSelectOptions('local'), data.local_instalacao);
+            populateSelect("edit_conexao", getSelectOptions('conexao'), data.conexao_rede);
 
             const editModal = new bootstrap.Modal(document.getElementById('editModal'));
             editModal.show();
